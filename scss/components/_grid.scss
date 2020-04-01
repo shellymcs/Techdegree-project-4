@@ -4,6 +4,9 @@
 
 .container {
     padding: 0 10px;
+    @include mq(m) {
+      max-width: 1400px;
+  }
   }
   
   .row {
