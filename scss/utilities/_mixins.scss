@@ -1,0 +1,10 @@
+@mixin mq($break) {
+    @if $break == 'm' {
+        @media (min-width:$break-m) {
+          @content;
+        }
+      }
+      @else {
+        @error "Sorry, no breakpoint defined";
+      }
+    }
